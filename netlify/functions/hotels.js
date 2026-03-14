@@ -1,9 +1,9 @@
 // netlify/functions/hotels.js
 // Server-side proxy — calls Amadeus hotel APIs without CORS restrictions
 
-const AM_KEY    = "jk6L5jPNx4tw0TBzoqYnAKPffOUSYU02";
-const AM_SECRET = "1YzcXjSpwAEyNUo9";
-const AM_BASE   = "https://test.api.amadeus.com";
+const AM_KEY    = "DWhwCWEEZYw3ZvyGIZ6imzRjh5GBE2Kt";
+const AM_SECRET = "cGgd8ZE6mRyolkhf";
+const AM_BASE   = "https://api.amadeus.com";
 
 async function getToken() {
   const resp = await fetch(AM_BASE + "/v1/security/oauth2/token", {
