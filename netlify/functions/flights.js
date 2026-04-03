@@ -1,8 +1,8 @@
 // netlify/functions/flights.js
 // Server-side proxy — calls Amadeus without CORS restrictions
 
-const AM_KEY    = "DWhwCWEEZYw3ZvyGIZ6imzRjh5GBE2Kt";
-const AM_SECRET = "cGgd8ZE6mRyolkhf";
+const AM_KEY    = process.env.AMADEUS_API_KEY;
+const AM_SECRET = process.env.AMADEUS_API_SECRET;
 const AM_BASE   = "https://api.amadeus.com";
 
 async function getToken() {
